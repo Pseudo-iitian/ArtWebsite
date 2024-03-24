@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Art | Website</title>
+  <title>Art | About The Artist</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -18,22 +18,24 @@
         <nav>
           <ul id="navList">
             <li>
-              <div class="navLogo">
+              <div class="navLogo" id="home">
                 <span class="material-symbols-outlined">brush</span>
                 <p>About The Artist</p>
               </div>
             </li>
             <li>
               <div class="navItems">
-                <a href="index.html">Home</a>
-                <a href="#about">About Me</a>
-                <a href="#features">Features</a>
-                <a href="#contactMe">Contact Me</a>
+                <a href="#about" id="aboutme" class="nav-link">About Me</a>
+                <a href="#features" id="ourfeatures" class="nav-link">Features</a>
+                <a href="#contactMe" id="contact" class="nav-link">Contact Me</a>
               </div>
+              <!-- <div class="menu">
+                <img src="assets/menu.png" alt="">
+              </div> -->
             </li>
             <li>
               <div class="sample">
-                <a href="#">See Samples</a>
+                <a href="html/sample.html">See Samples</a>
               </div>
             </li>
           </ul>
@@ -57,16 +59,16 @@
       <div class="aboutMe" id="about">
         <div class="leftBox">
           <h1>About Me</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, maiores. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Excepturi eum minus neque quisquam, provident quod, rerum molestias
-            repudiandae aliquid voluptas ab. <br><br> Temporibus tenetur nostrum ipsa eum esse perferendis placeat ex
-            necessitatibus accusantium dolore dignissimos, exercitationem iusto repudiandae minus fugit et qui animi
-            iste quis? Accusantium ut velit sapiente minus quasi exercitationem et nihil dignissimos! Necessitatibus
-            dolor exercitationem iste consequatur consectetur! <br><br> Minima quidem repudiandae explicabo enim
-            voluptatem
-            deserunt eius itaque soluta libero assumenda esse neque dicta perferendis voluptas qui, veniam quaerat
-            voluptates expedita eveniet accusamus!</p>
-          <button class="seeSamples">See Samples</button>
+          <p>My name is Priya Verma, and I am a dedicated individual with a passion for learning and growth. I completed
+            my intermediate education at Mukularanyam English School. In my academic journey, I attained 59% in Class
+            10th and 71% in Class 12th.<br><br> Additionally, I have honed my skills through the completion of the ADCA
+            (Advanced Diploma in Computer Application) course from Vedantsri Institute. My proficiency extends to
+            various software applications including MS Word, Excel, PowerPoint, Photoshop, Coreldraw, and Tally.
+
+            <br><br> With a commitment to excellence and a diverse skill set, I am ready to contribute positively to any
+            endeavor I undertake.
+          </p>
+          <a href="html/sample.html" class="seeSamples">See Samples</a>
         </div>
         <div class="rightBox">
           <img src="assets/about.png" alt="">
@@ -80,56 +82,57 @@
           <h1>Our Features</h1>
         </div>
 
-        <div class="featureContianer">
-          <div class="cards">
+        <div class="featureContianer" id="featureItemsPutHere">
+          <!-- <div class="cards">
             <img src="https://j3k5s6s3.rocketcdn.me/wp-content/uploads/2021/03/Pichwai-Minakshi-04.jpeg" alt=""
               onclick="previewImage(this.src)">
             <h2>Bani Thani</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
           </div>
           <div class="cards">
-            <img src="https://j3k5s6s3.rocketcdn.me/wp-content/uploads/2021/03/Pichwai-Minakshi-04.jpeg" alt=""
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxEnGvfbKVbMhzEqmJ6TcBj1tQ6SG82HIhyR8c-LDuQ&s" alt=""
               onclick="previewImage(this.src)">
             <h2>Bani Thani</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
           </div>
           <div class="cards">
-            <img src="https://j3k5s6s3.rocketcdn.me/wp-content/uploads/2021/03/Pichwai-Minakshi-04.jpeg" alt=""
+            <img src="https://handmadeheritage.in/wp-content/uploads/2023/11/Tanjore-painting-Shobankumar-10-786x1024.jpeg" alt=""
               onclick="previewImage(this.src)">
             <h2>Bani Thani</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, error!</p>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <!-- for previewing the images -->
-      
-      
+
+
       <div class="contactUs" id="contactMe">
         <div class="myDetail">
-          <p>Name: Priya Verma</p>
-          <p>Email Address: abc@gmail.com</p>
+          <p>Priya Verma...</p>
         </div>
         <div class="social">
-          <a href=""><img src="assets/insta.png" alt=""></a>
+          <a href="https://www.instagram.com/about__the__artist?utm_source=qr&igsh=MW9ocWJzdnVkMzllbQ%3D%3D"><img
+              src="assets/insta.png" alt=""></a>
           <a href=""><img src="assets/linkedin.png" alt=""></a>
           <a href=""><img src="assets/youtube.png" alt=""></a>
           <a href=""><img src="assets/twitter.png" alt=""></a>
         </div>
       </div>
     </main>
-    
+
     <div id="preview"></div>
 
     <footer class="foot">
       <div>
-        <p>CopyrRight &copy; | All Right Reserved | About The Artist... </p>
+        <p>CopyRight &copy; | About The Artist </p>
       </div>
     </footer>
   </div>
 
 
   <script src="js/app.js"></script>
+  <script type="module" src="js/firebase.js"></script>
 </body>
 
 </html>

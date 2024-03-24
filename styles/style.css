@@ -7,6 +7,7 @@
   --body-color: #e8e8e8;
   --nav-color: #f8f8f8;
   --line-height:20px;
+  user-select: none;
 }
 
 body{
@@ -57,6 +58,42 @@ main{
 
 
 /* for navbar starts */
+
+
+.navItems #home{
+  padding: 10px;
+  border-radius: 50px;
+}
+
+#home:hover{
+  border: 1px solid black;
+}
+
+#aboutme{
+  padding: 10px;
+  border-radius: 50px;
+}
+
+#aboutme:hover{
+  border: 1px solid black;
+}
+
+#ourfeatures{
+  padding: 10px;
+  border-radius: 50px; 
+}
+#ourfeatures:hover {
+  border: 1px solid black;
+}
+
+#contact{
+  padding: 10px;
+  border-radius: 50px;
+}
+#contact:hover{
+  border:1px solid black;
+}
+
 .navContainer {
   width: 97vw;
   background-color: var(--nav-color);
@@ -88,11 +125,41 @@ main{
   margin: auto;
   /* border: 2px solid blue; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-weight: 600;
 }
 
+
+.menu{
+  display: none;
+}
+.menu img{
+  width: 25px;
+  height: 20px;
+}
+
+@media (max-width:1400px) and (min-width:670px) {
+  .navItems{
+    width: 50vw;
+  }
+}
+
+@media (max-width:670px) {
+  .navItems{
+    /* display: none; */
+    width: 60vw;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+  }
+  .sample{
+    display: none;
+  }
+  .navList{
+    justify-content: space-between;
+  }
+}
 .sample{
   font-weight: 600;
   border: 2px solid black;
@@ -124,12 +191,14 @@ a{
 
 /* about Me starts here */
 .aboutMe{
+  border-radius: 50px;
   border: 2px solid rgb(207, 207, 207);
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   align-items: start;
   padding: 30px;
+  background-color: var(--nav-color);
   /* height: 650px; */
 }
 
@@ -158,9 +227,10 @@ a{
   width: fit-content;
 }
 .seeSamples{
+  width: fit-content;
   padding: 10px;
   background-color: var(--nav-color);
-  /* border: 2px solid black; */
+  border: 2px solid black;
   cursor: pointer;
   border-radius: 50px;
   margin-top: 20px;
@@ -246,6 +316,8 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 50px;
+  background-color: var(--nav-color);
 }
 
 .heading{
@@ -263,7 +335,7 @@ a{
 .cards{
   padding: 10px;
   width: 300px;
-  border: 2px solid black;
+  border: 2px solid rgb(202, 200, 200);
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -298,17 +370,60 @@ a{
 /* contact us starts here  */
 
 .contactUs{
+  margin-top: 25px;
   width: 100%;
   height: 300px;
   background-color: black;
   display: flex;
   justify-content: space-around;
+  border-radius: 50px;
   align-items: center;
 }
 
-.myDetail{
+@media (max-width:640px) {
+  .contactUs{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+}
+.myDetail p{
+  font-family: "Edu NSW ACT Foundation", cursive;
+  /* font-optical-sizing: auto; */
   color: white;
-  /* font-weight: 600; */
+  font-weight: 600;
+  font-style:normal;
+  font-size: 20px;
 }
 
 /* contact us ends here */
+
+/* sample container starts hree */
+.sampleContainer{
+  padding: 20px;
+  margin-top: 100px;
+  border: 2px solid rgb(218, 214, 214);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--nav-color);
+}
+
+.cardContainer{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+}
+
+.cards:hover{
+  box-shadow: 2px 2px 10px black;
+}
+.cards{
+  background-color: var(--body-color);
+}
+/* sample container ends here */
+
